@@ -1,0 +1,53 @@
+{
+  "name": "cella-node-tuling",
+  "version": "1.0.3",
+  "description": "The hassle-free way to build AI assistant service",
+  "main": "./index.js",
+  "files": ["src"],
+  "scripts": {
+    "test": "DEBUG=*,-babel babel-node test.js",
+    "debug": "DEBUG=*,-babel nodemon ./src/index.js 9000 --exec babel-node",
+    "build": "babel src --out-dir lib",
+    "start": "NODE_ENV=production DEBUG=*,-babel node index.js",
+    "eslint": "eslint ."
+  },
+  "repository": "git+https://github.com/10cella/cella-node-tuling.git",
+  "author": "vjudge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/10cella/cella-node-tuling/issues"
+  },
+  "homepage": "https://github.com/10cella/cella-node-tuling#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "rstream": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-syntax-async-functions": "^6.8.0",
+    "babel-plugin-transform-regenerator": "^6.11.4",
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.11.6",
+    "chai": "^3.5.0",
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb": "^10.0.0",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-import": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-react": "^6.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "nodemon": "^1.10.0",
+    "should": "^10.0.0",
+    "standard": "^8.4.0"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "src"
+  ]
+}
